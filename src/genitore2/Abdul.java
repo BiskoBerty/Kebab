@@ -9,7 +9,7 @@ package genitore2;
  *
  * @author galimberti.riccardoe
  */
-public class Abdul {
+public class Abdul implements Runnable{
     public boolean kebab;
     
     public synchronized boolean sfornakebab(){
@@ -23,6 +23,11 @@ public class Abdul {
             Thread.sleep(3000);
             kebab = true;
         }catch(InterruptedException ex){}
+    }
+
+    @Override
+    public void run() {
+        prepara();
     }
     
 }

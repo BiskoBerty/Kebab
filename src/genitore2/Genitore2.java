@@ -17,6 +17,7 @@ public class Genitore2 {
         for (int i = 0; i < t.length; i++) {
             t[i] = new Thread(new tizio(Kebabbaro,i));
         }
+        
         for (int i = 0; i < 20; i++) {
             t[i].start();
         }

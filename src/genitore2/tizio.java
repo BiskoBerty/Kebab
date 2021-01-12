@@ -28,7 +28,7 @@ public class tizio implements Runnable{
                 soddisfatto = ab.sfornakebab();
                 if (soddisfatto){
                     System.out.println("Thread soddisfatto : " + numero);
-                    notifyAll();
+                    notify();
                 }else{
                     try {
                         wait();
